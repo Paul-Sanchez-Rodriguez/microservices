@@ -65,7 +65,7 @@ ALTER TABLE productos ADD CONSTRAINT productos_categorias
 ;
 
 ALTER TABLE ordenes ADD CONSTRAINT order_product
-    FOREIGN KEY (idproducto)
+    FOREIGN KEY (producto_id)
         REFERENCES productos (id)
         NOT DEFERRABLE
             INITIALLY IMMEDIATE
